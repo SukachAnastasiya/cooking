@@ -1,0 +1,58 @@
+concept_carp<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Сазан]
+      (*<-lang_ru;;*);
+
+      [Carp]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Сазан)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_freshwater_fish;
+	 concept_representative;
+     concept_family_cyprinidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Сазан - это пресноводная рыба, которая является представителем семейства карповые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Сазан, всеядная рыба, крупная рыба, толстое тело, удлиненное тело, крупная чешуя, гладкая чешуя) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+	concept_omnivorous_fish;
+    concept_big_fish;
+	concept_fat_body;
+    concept_elongated_body;
+    concept_large_scales;
+    concept_smooth_scales
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Сазан является всеядной крупной рыбой с толстым, умеренно удлиненным телом, покрытым крупной, гладкой чешуей. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_carp -> rrel_example: [  Европейский сазан является самым часто встречаемым сазаном. ](* <- lang_ru;; *);;
+
+concept_bream <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_carp;;
+		<-concept_boiled_carp;;
+		<-concept_fried_carp;;	
+*);;

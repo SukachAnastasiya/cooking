@@ -1,0 +1,55 @@
+concept_european_ruffe<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Европейский ерш]
+      (*<-lang_ru;;*);
+
+      [Eurapean ruffe]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Европейский ерш )] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_percidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [Европейский ерш - это представитель семейства окуневые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Европейский ерш, распостраненный вид, природный ареал, центральная Европа, восточная Европа) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+	concept_main_advantage;
+    concept_natural_range;
+	concept_central_europe;
+    concept_east_europe
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Европейский ерш является самым распостраненным из четырех видов, потому что его природный ареал включает центральную и восточную Европу. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_bream -> rrel_example: [Ерш очень неприхотливый, обычно стайный вид, и он очень хорошо чувствует себя в в широком спектре условий окружающей среды.](* <- lang_ru;; *);;
+
+concept_bream <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_european_ruffe;;
+		<-concept_boiled_european_ruffe;;
+		<-concept_fried_european_ruffe;;	
+*);;

@@ -1,0 +1,43 @@
+concept_kaluga <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Калуга ]
+      (*<-lang_ru;;*);
+      [ Kaluga ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Калуга )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sturgeon;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Калуга - это представитель семейства осетровые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Калуга, амурская чебака, кета, горбуша, минога )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_amur_chebak; 
+    concept_chum;
+    concept_pink_salmon; 
+    concept_lamprey
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Калуга поедает амурского чебака, кету, горбушу и миногу. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_kaluga -> rrel_example: [ Различают проходную, лиманную и быстрорастущую калугу. ](* <- lang_ru;; *);;
+ concept_kaluga <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_kaluga;;
+		<-concept_boiled_kaluga;;
+		<-concept_fried_kaluga;;	
+*);;

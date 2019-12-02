@@ -1,0 +1,43 @@
+concept_clupea <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Сельдь ]
+      (*<-lang_ru;;*);
+      [ Clupea ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Сельдь )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_clupeidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Сельдь - это представитель семейства сельдевые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Сельдь, сжатое тело, бок, умеренная чешуя, крупная чешуя )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_compressed_body; 
+    concept_side;
+    concept_moderate_scales;
+    concept_large_scales
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ У сельди сжатое с боков тело, чешуя умеренная или крупная. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_clupea -> rrel_example: [ Пищей сельди являются различные мелкие животные и ракообразные. ](* <- lang_ru;; *);;
+ concept_clupea <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_clupea;;
+		<-concept_boiled_clupea;;
+		<-concept_fried_clupea;;	
+*);;

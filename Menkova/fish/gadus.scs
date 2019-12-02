@@ -1,0 +1,48 @@
+concept_gadus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Треска ]
+      (*<-lang_ru;;*);
+      [ Gadus ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Треска )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_code;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Треска - это представитель семейства тресковые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Треска, взрослый, питание, минтай, навага, ракообразное, червь, моллюск )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_adult;
+    concept_food;
+    concept_pollock;
+    concept_navaga;
+    concept_crustacean;
+    concept_worm;
+    concept_mollusk
+
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Взрослая треска питается минтаем, навагой, ракообразными, червями и моллюсками. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_gadus -> rrel_example: [ Максимальая длина трески достигает 120 сантиметров. ](* <- lang_ru;; *);;
+
+concept_gadus <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_gadus;;
+		<-concept_boiled_gadus;;
+		<-concept_fried_gadus;;	
+*);;

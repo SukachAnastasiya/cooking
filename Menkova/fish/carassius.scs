@@ -1,0 +1,57 @@
+concept_carassius<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Карась]
+      (*<-lang_ru;;*);
+
+      [Carassius]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Карась)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_freshwater_fish;
+	 concept_representative;
+     concept_family_cyprinidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Карась - это пресноводная рыба, которая является представителем семейства карповые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Карась, высокое тело, толстая спина, сжатое с боков тело, крупная чешуя, гладкая чешуя) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+    concept_hight_body;
+	concept_fat_back;
+    concept_laterally_compressed_body;
+    concept_large_scales;
+    concept_smooth_scales
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Тело у карася высокое с толстой спиной, умеренно сжатое с боков, а чешуя крупная и гладкая на ощупь. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_carp -> rrel_example: [ Серебряный карась является самым часто встречаемым карасем. ](* <- lang_ru;; *);;
+
+concept_bream <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_carassius;;
+		<-concept_boiled_carassius;;
+		<-concept_fried_carassius;;	
+*);;

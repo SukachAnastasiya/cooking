@@ -1,0 +1,45 @@
+concept_acipenser <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Осетр ]
+      (*<-lang_ru;;*);
+      [ Acipenser ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Осетр )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sturgeon;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Осетр - это представитель семейства осетровые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Осетр, дно, питание, рыба, моллюск, червь )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_fish; 
+    concept_food;
+    concept_bottom; 
+    concept_worm;
+    concept_clam
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Осетр держится преимущественно у дна, питается рыбой, моллюсками и червями. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_acipenser -> rrel_example: [ Масса осетра может достигать 816 кг. ](* <- lang_ru;; *);;
+
+concept_acipenser <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_acipenser;;
+		<-concept_boiled_acipenser;;
+		<-concept_fried_acipenser;;	
+*);;

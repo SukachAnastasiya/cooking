@@ -1,0 +1,44 @@
+concept_burbot <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Налим ]
+      (*<-lang_ru;;*);
+      [ Burbot ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Налим )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_code;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Налим - это представитель семейства тресковые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Налим, удлиненное тело, округлое тело, невысокое тело, передняя часть )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_elongated_body; 
+    concept_rounded_body;
+    concept_low_body; 
+    concept_front_part
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Налим имеет удлиненное, невысокое, округлое тело в передней части и сильно сжатое с боков. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_burbot -> rrel_example: [ Налим более активен в холодной воде. ](* <- lang_ru;; *);;
+
+concept_burbot <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_burbot;;
+		<-concept_boiled_burbot;;
+		<-concept_fried_burbot;;	
+*);;

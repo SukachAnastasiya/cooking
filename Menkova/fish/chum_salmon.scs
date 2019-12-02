@@ -1,0 +1,54 @@
+concept_chum_salmon <- sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [ Кета ]
+      (*<-lang_ru;;*);
+
+      [ Chum Salmon ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.( Кета )] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_salmonidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Кета - это представитель семейства лососевые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение ( Кета, второе место, массовый представитель, семейство лососевые) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+  	concept_mass_representative;
+    concept_second_place;
+    concept_family_salmonidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Кета занимает второе место среди наиболее массовых представителей семейства лососевые. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_chum_salmon -> rrel_example: [ Кета питается ракообразными, моллюсками и корюшкой.](* <- lang_ru;; *);;
+
+concept_chum_salmon <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_chum_salmon;;
+		<-concept_boiled_chum_salmon;;
+		<-concept_fried_chum_salmon;;	
+*);;

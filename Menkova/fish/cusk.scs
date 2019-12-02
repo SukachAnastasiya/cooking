@@ -1,0 +1,41 @@
+concept_cusk <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Менек ]
+      (*<-lang_ru;;*);
+      [ Cusk ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Менек)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_code;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Менек - это представитель семейства тресковые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Менек, вытянутое тело, мелкая чешуя )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_elongated_body;
+    concept_small_scales
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Менек имеет вытянутое тело, покрытое мелкой чешуей. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_cusk -> rrel_example: [ Менек питается ракообразными, моллюсками и мелкой рыбой. ](* <- lang_ru;; *);;
+
+concept_cusk <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_cusk;;
+		<-concept_boiled_cusk;;
+		<-concept_fried_cusk;;	
+*);;

@@ -1,0 +1,44 @@
+concept_clupeonella <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Тюлька ]
+      (*<-lang_ru;;*);
+      [ Clupeonella ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Тюлька )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_clupeidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Тюлька - это представитель семейства сельдевые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Тюлька, сантиметр, длина, тело, жизнь, год )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_centimetr; 
+    concept_length;
+    concept_body;
+    concept_life;
+    concept_year
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Длина тела тюльки достигает до девяти в половиной саниметров, а максимальная продолжительность жизни два года. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_clupeonella -> rrel_example: [ Тюлька обитает в пресноводном озере Абрау. ](* <- lang_ru;; *);;
+ concept_clupeonella <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_clupeonella;;
+		<-concept_boiled_clupeonella;;
+		<-concept_fried_clupeonella;;	
+*);;
