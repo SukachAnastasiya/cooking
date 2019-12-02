@@ -37,7 +37,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Морковь)](*<- lang_ru;;*);;
 *);;
 
-concept_carrot<-nrel_inclusion:concept_vegetable;;
+concept_carrot<=nrel_inclusion:concept_vegetable;;
 
 
 

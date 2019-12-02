@@ -41,7 +41,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Корица)](*<- lang_ru;;*);;
 *);;
 
-concept_cinnamon<-nrel_inclusion:concept_spice;;
+concept_cinnamon<=nrel_inclusion:concept_spice;;
 
 
 

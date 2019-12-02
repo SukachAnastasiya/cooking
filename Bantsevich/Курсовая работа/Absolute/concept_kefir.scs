@@ -39,7 +39,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Кефир)](*<- lang_ru;;*);;
 *);;
 
-concept_kefir<-nrel_inclusion:concept_dairy_product;;
+concept_kefir<=nrel_inclusion:concept_dairy_product;;
 
 
 

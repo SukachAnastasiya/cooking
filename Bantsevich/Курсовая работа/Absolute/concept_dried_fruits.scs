@@ -54,7 +54,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Сухофрукты)](*<- lang_ru;;*);;
 *);;
 
-concept_dried_fruits<-nrel_inclusion:concept_berry;concept_fruit;;
+concept_dried_fruits<=nrel_inclusion:concept_berry;concept_fruit;;
 //concept_dried_fruits<=nrel_inclusion:concept_fruit;;
 
 

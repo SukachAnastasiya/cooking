@@ -40,7 +40,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Киви)](*<- lang_ru;;*);;
 *);;
 
-concept_kiwi<-nrel_inclusion:concept_berry;;
+concept_kiwi<=nrel_inclusion:concept_berry;;
 
 
 

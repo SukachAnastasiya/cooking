@@ -45,6 +45,6 @@ illustration -> ...
 
 
 concept_doctor_sausage<-rrel_example:concept_sausage;;
-concept_sausage<-nrel_inclusion:concept_product;;
+concept_sausage<=nrel_inclusion:concept_product;;
 
 

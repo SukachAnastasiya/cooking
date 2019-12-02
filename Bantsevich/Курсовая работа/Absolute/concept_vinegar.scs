@@ -40,7 +40,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Уксус)](*<- lang_ru;;*);;
 *);;
 
-concept_vinegar<-nrel_inclusion:concept_product;;
+concept_vinegar<=nrel_inclusion:concept_product;;
 
 
 

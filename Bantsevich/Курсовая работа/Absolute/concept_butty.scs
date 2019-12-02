@@ -55,7 +55,7 @@ illustration -> ...
       => nrel_main_idtf: [Рисунок(Бутерброд)](*<- lang_ru;;*);;
 *);;
 
-concept_butty<-nrel_inclusion:concept_product;;
+concept_butty<=nrel_inclusion:concept_product;;
 concept_butty<-rrel_example:sandwich_e3;sandwich_e4;;
 
 

@@ -39,7 +39,7 @@ illustration -> ...
 	<= nrel_sc_text_translation: ...(*->"file://pictures/eggplant.jpg";;*);;
 	=> nrel_main_idtf: [Рисунок(баклажан)](*<- lang_ru;;*);;
 *);;
-concept_eggplant<-nrel_inclusion:concept_vegetable;;
+concept_eggplant<=nrel_inclusion:concept_vegetable;;
 
 
 

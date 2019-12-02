@@ -43,7 +43,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Мандарин)](*<- lang_ru;;*);;
 *);;
 
-concept_mandarin<-nrel_inclusion:concept_fruit;;
+concept_mandarin<=nrel_inclusion:concept_fruit;;
 
 
 

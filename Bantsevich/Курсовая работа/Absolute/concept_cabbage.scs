@@ -39,7 +39,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(капуста)](*<- lang_ru;;*);;
 *);;
 
-concept_cabbage<-nrel_inclusion:concept_vegetable;;
+concept_cabbage<=nrel_inclusion:concept_vegetable;;
 concept_cabbage<-nrel_example:concept_sauerkraut;;
 
 

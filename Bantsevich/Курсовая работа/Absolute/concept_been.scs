@@ -41,7 +41,7 @@ illustration -> ...
        => nrel_main_idtf: [Рисунок(Фасоль)](*<- lang_ru;;*);;
 *);;
 
-concept_bean<-nrel_inclusion:concept_beans;;
+concept_bean<=nrel_inclusion:concept_beans;;
 
 
 

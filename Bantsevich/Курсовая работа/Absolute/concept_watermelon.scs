@@ -41,6 +41,6 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Арбуз)](*<- lang_ru;;*);;
 *);;
 
-concept_watermelon<-nrel_inclusion:concept_berry;concept_vegetable;;
+concept_watermelon<=nrel_inclusion:concept_berry;concept_vegetable;;
 
 

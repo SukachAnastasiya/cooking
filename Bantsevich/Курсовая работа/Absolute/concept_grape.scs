@@ -42,7 +42,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Виноград)](*<- lang_ru;;*);;
 *);;
 
-concept_grape<-nrel_inclusion:concept_berry;;
+concept_grape<=nrel_inclusion:concept_berry;;
 
 
 

@@ -29,5 +29,5 @@ illustration -> ...
         => nrel_main_idtf: [Рисунок(Бабка)](*<- lang_ru;;*);;
 *);;
 
-concept_babka <- nrel_national_dish: concept_belarus;;
+concept_babka <= nrel_national_dish: concept_belarus;;
 concept_babka <- concept_dish;;

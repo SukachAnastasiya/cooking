@@ -39,7 +39,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Батон)](*<- lang_ru;;*);;
 *);;
 
-concept_loaf<-nrel_inclusion:concept_bakery;;
+concept_loaf<=nrel_inclusion:concept_bakery;;
 
 
 
