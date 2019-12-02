@@ -1,0 +1,34 @@
+
+sc_node_not_relation->concept_melon;;
+sc_node_not_relation->concept_fruit;;
+sc_node_not_relation->concept_citrus_fruit;;
+
+
+sc_node_norole_relation->nrel_inclusion;;
+
+concept_melon
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Дыня]
+		(* <- lang_ru;; *);;
+
+concept_melon=> nrel_main_idtf: [Дыня](* <- lang_ru;; *);;
+concept_melon=> nrel_main_idtf: [melon](* <- lang_en;; *);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_melon;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Дыня содержит витамины В1, В2, РР, А, С. Дыня чрезвычайно богата железом: его массовая доля в 17 раз больше, чем в молоке. Кроме железа дыня содержит калий, кальций, натрий и хлор. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Дыня)](*<- lang_ru;;*);;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_melon;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/melon.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Дыня)](*<- lang_ru;;*);;
+*);;
+
+concept_melon<=nrel_inclusion:concept_fruit;;
+
+
+

@@ -1,0 +1,53 @@
+
+sc_node_not_relation->concept_caviar;;
+sc_node_not_relation->concept_river_fish;;
+sc_node_not_relation->concept_shellfish;;
+sc_node_not_relation->concept_product;;
+
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_caviar;;
+	<= nrel_sc_text_translation: ...(*->[Икра — масса из яиц самок рыб, земноводных, моллюсков, иглокожих.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (икра)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_river_fish;
+		concept_shellfish
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_caviar;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Неоплодотворённую икру используют как пищевой продукт, употребляя её как в сыром, так и в приготовленном виде.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(икра)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_product
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_caviar;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/caviar.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(икра)](*<- lang_ru;;*);;
+*);;
+
+concept_caviar => nrel_kkal : 204_kkal
+(*
+	=> nrel_main_idtf:
+	[204 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+//concept_caviar<=nrel_inclusion:concept_beans;;
+
+
+

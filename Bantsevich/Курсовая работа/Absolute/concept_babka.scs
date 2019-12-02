@@ -1,0 +1,33 @@
+sc_node_not_relation->concept_grated_potato;;
+sc_node_not_relation->concept_viande;;
+sc_node_not_relation->concept_onion;;
+
+concept_babka
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Бабка]
+		(* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+        ->rrel_key_sc_element: concept_babka;;
+         <= nrel_sc_text_translation: ...(*->[Бабка — блюдо из тертого картофеля, заправленного жареным салом, мясом и луком и запеченное в духовке.](*<-lang_ru;;*);;*);;
+         => nrel_main_idtf: [Определение (Бабка)](*<- lang_ru;;*);;
+         => nrel_using_constants: 
+                {
+                concept_grated_potato;
+                concept_viande;
+                concept_onion
+                };;
+*);;
+
+
+illustration -> ...
+(*
+        ->rrel_key_sc_element: concept_babka;;
+        <= nrel_sc_text_translation: ...(*->"file://pictures/babka.jpg";;*);;
+        => nrel_main_idtf: [Рисунок(Бабка)](*<- lang_ru;;*);;
+*);;
+
+concept_babka <= nrel_national_dish: concept_belarus;;
+concept_babka <- concept_dish;;

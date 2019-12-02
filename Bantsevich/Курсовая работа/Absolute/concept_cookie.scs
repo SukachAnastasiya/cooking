@@ -1,0 +1,71 @@
+sc_node_not_relation->concept_cookie;;
+sc_node_not_relation->concept_bakery;;
+sc_node_not_relation->concept_duff;;
+sc_node_not_relation->concept_oat_cookies;;
+sc_node_not_relation->concept_sand_cookie;;
+
+sc_node_norole_relation->nrel_inclusion;;
+sc_node_role_relation->rrel_example;;
+sc_node_role_relation->nrel_processing_method;;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_cookie;;
+	<= nrel_sc_text_translation: ...(*->[Печенье — небольшое хлебопекарное изделие, выпеченное из теста, обычно сладкое, длительного хранения.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Печенье)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_bakery;
+		concept_duff
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cookie;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Печенье бывает : сахарное, затяжное или сухое, сдобное, которое может быть слоёным, песочным, овсяным, сбивным.Все эти виды печенья различаются между собой консистенцией теста и способом приготовления.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Печенье)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_cookie;
+		concept_oat_cookies;
+		concept_duff;
+		nrel_processing_method;
+		concept_sand_cookie
+		};;
+*);;
+
+     concept_oat_cookies<-...
+	(*
+		->concept_duff;;
+                ->concept_sand_cookie;;
+		=>nrel_main_idtf:[Разбиение по признаку различий теста](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_cookie;;
+	*);;
+
+
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_cookie;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/cookie.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Печенье)](*<- lang_ru;;*);;
+*);;
+
+concept_cookie => nrel_kkal : 502_kkal
+(*
+	=> nrel_main_idtf:
+	[502 ккал]
+	(*
+	<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+//concept_cookie<=nrel_inclusion:concept_beans;;
+concept_cookie_slodych<-rrel_example:concept_cookie;;
+
+
+

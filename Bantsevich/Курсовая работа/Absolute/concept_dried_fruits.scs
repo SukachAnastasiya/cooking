@@ -1,0 +1,61 @@
+sc_node_not_relation->concept_dried_fruits;;
+sc_node_not_relation->concept_grape;;
+sc_node_not_relation->concept_berry;;
+sc_node_not_relation->concept_fruit;;
+
+sc_node_norole_relation->nrel_inclusion;;
+sc_node_norole_relation->nrel_protein_content;;
+
+
+concept_dried_fruits
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Сухофрукты]
+		(* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_dried_fruits;;
+	<= nrel_sc_text_translation: ...(*->[Сухофрукты — высушенные фрукты или ягоды, с остаточной влажностью около 20 %.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Сухофрукты)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_berry;
+		concept_fruit
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_dried_fruits;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Сухофрукты богаты витаминами и минеральными элементами, содержат порядка 250 ккал и 1,5 — 5 г белка на 100г.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Сухофрукты)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		nrel_protein_content;
+		concept_dried_fruits
+		};;
+*);;
+
+
+ concept_raisins<-...
+	(*
+		->concept_dried_apricots;;
+                =>nrel_main_idtf:[Разбиение по признаку главного ингредиента](* <- lang_ru;; *);;
+		=>nrel_subdividing:concept_dried_fruits;;
+	*);;
+
+
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_dried_fruits;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/dried_fruits.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Сухофрукты)](*<- lang_ru;;*);;
+*);;
+
+concept_dried_fruits<=nrel_inclusion:concept_berry;concept_fruit;;
+//concept_dried_fruits<=nrel_inclusion:concept_fruit;;
+
+
+

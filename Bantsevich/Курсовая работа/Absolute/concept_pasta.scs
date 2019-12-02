@@ -1,0 +1,26 @@
+sc_node_not_relation->concept_pasta;;
+sc_node_not_relation->concept_duff;;
+sc_node_not_relation->concept_water;;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pasta;;
+	<= nrel_sc_text_translation: ...(*->[Макароны — трубчатые макаронные изделия из высушенного пшеничного теста, замешанного на воде.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Макароны)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_duff;
+		concept_water
+		};;
+*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_pasta;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/pasta.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Макароны)](*<- lang_ru;;*);;
+*);;
+
+concept_babka <- concept_dish;;

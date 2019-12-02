@@ -1,0 +1,47 @@
+sc_node_not_relation->concept_raisins;;
+sc_node_not_relation->concept_dried_fruits;;
+sc_node_not_relation->concept_grape;;
+sc_node_not_relation->concept_berry;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+concept_raisins
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Изюм]
+		(* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_raisins;;
+	<= nrel_sc_text_translation: ...(*->[Изюм — сушёные ягоды винограда.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Изюм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_berry;
+		concept_grape
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_raisins;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Изюм почти в четыре раза калорийнее, чем свежий виноград.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Изюм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_grape
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_raisins;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/raisins.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Изюм)](*<- lang_ru;;*);;
+*);;
+
+//concept_raisins<=nrel_inclusion:concept_dried_fruits;;
+
+
+

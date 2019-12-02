@@ -1,0 +1,50 @@
+sc_node_not_relation->concept_sausage;;
+sc_node_not_relation->concept_product;;
+sc_node_not_relation->concept_minced_meat;;
+sc_node_not_relation->concept_meat;;
+sc_node_role_relation->rrel_example;;
+
+
+concept_doctor_sausage
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Докторская колбаса]
+		(* <- lang_ru;; *);;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+definition ->...
+(*
+       ->rrel_key_sc_element: concept_sausage;;
+       <= nrel_sc_text_translation: ...(*->[Колбаса - это пищевой продукт, который изготовлен из мясного фарша, помещенного в искусственную оболочку](*<-  lang_ru;;*);;*);;
+       => nrel_main_idtf: [Определение (Колбаса)](*<- lang_ru;;*);;
+       => nrel_using_constants: 
+             {
+             concept_product;
+             concept_minced_meat
+             };;
+*);;
+
+statement ->...
+(*
+       ->rrel_key_sc_element: concept_sausage;;
+        <= nrel_sc_text_translation: ...(*->rrel_example:[Колбаса- наиболее популярный вид мясной продукции, готовой к употреблению](*<-lang_ru;;*);;*);;
+        => nrel_main_idtf: [Утверждение(Колбаса)](*<- lang_ru;;*);;
+        => nrel_using_constants: 
+             {
+             concept_meat
+             };;
+*);;
+
+illustration -> ...
+(*
+      ->rrel_key_sc_element: concept_sausage;;
+      <= nrel_sc_text_translation: ...(*->"file://pictures/sausage.jpg";;*);;
+      => nrel_main_idtf: [Рисунок(Колбаса)](*<- lang_ru;;*);;
+*);;
+
+
+concept_doctor_sausage<-rrel_example:concept_sausage;;
+concept_sausage<=nrel_inclusion:concept_product;;
+
+

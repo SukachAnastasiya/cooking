@@ -1,0 +1,45 @@
+sc_node_not_relation->concept_eggplant;;
+sc_node_not_relation->concept_cucumber;;
+sc_node_not_relation->concept_vegetable;;
+sc_node_not_relation->concept_berry;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+concept_eggplant
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [баклажан]
+		(* <- lang_ru;; *);;
+definition ->...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+	<= nrel_sc_text_translation: ...(*->[Баклажан - овощ, обычно фиолетового цвета, в форме крупного огурца.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (баклажан)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_vegetable;
+		concept_cucumber
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Баклажан - это ягода ботаническом смысле, в кулинарном рассматривается как овощ.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(баклажан)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_berry;
+		concept_vegetable
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/eggplant.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(баклажан)](*<- lang_ru;;*);;
+*);;
+concept_eggplant<=nrel_inclusion:concept_vegetable;;
+
+
+

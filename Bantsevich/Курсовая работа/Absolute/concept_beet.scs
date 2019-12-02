@@ -1,0 +1,50 @@
+sc_node_not_relation->concept_beet;;
+sc_node_not_relation->concept_vegetable;;
+sc_node_not_relation->concept_concept_borscht;;
+sc_node_not_relation->concept_product;;
+sc_node_not_relation->concept_herring;;
+sc_node_not_relation->concept_sugar;;
+sc_node_not_relation->concept_dish;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+//concept_beetroot=> nrel_main_idtf: [свёкла](* <- lang_ru;; *);;
+//concept_beetroot=> nrel_main_idtf: [beet](* <- lang_en;; *);;
+
+definition ->...
+(*
+       ->rrel_key_sc_element: concept_beet;;
+       <= nrel_sc_text_translation: ...(*->[Свекла- растение, корнеплоды которого употребляются в пищу, идут на корм скоту или на изготовление сахара.](*<-lang_ru;;*);;*);;
+       => nrel_main_idtf: [Определение (Свекла)](*<- lang_ru;;*);;
+       => nrel_using_constants:
+              {
+              concept_food;
+              concept_sugar
+              };;
+*);;
+
+statement ->...
+(*
+      ->rrel_key_sc_element: concept_beet;;
+      <= nrel_sc_text_translation: ...(*->rrel_example:[ Свекла — продукт, без которого нельзя представить борщ, селедку под шубой и другие блюда.](*<-lang_ru;;*);;*);;
+      => nrel_main_idtf: [Утверждение(Свекла)](*<- lang_ru;;*);;
+      => nrel_using_constants:
+              {
+              concept_product;
+              concept_borscht;
+              concept_dish;
+              concept_herring
+              };;
+*);;
+
+illustration -> ...
+(*
+      ->rrel_key_sc_element: concept_beet;;
+       <= nrel_sc_text_translation: ...(*->"file://pictures/beetroot.jpg";;*);;
+       => nrel_main_idtf: [Рисунок(Свекла)](*<- lang_ru;;*);;
+*);;
+
+concept_beet<=nrel_inclusion:concept_vegetable;;
+
+
+

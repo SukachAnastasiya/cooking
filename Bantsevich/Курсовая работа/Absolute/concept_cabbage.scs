@@ -1,0 +1,45 @@
+
+sc_node_not_relation->concept_cabbage;;
+sc_node_not_relation->concept_vegetable;;
+sc_node_not_relation->concept_sauerkraut;;
+sc_node_not_relation->concept_vegetable;;
+sc_node_role_relation->rrel_example;;
+
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+
+definition ->...
+(*
+        ->rrel_key_sc_element: concept_cabbage;;
+        <= nrel_sc_text_translation: ...(*->[Капуста -огородный овощ, растущий обычно кочаном.](*<-lang_ru;;*);;*);;
+        => nrel_main_idtf: [Определение (Капуста)](*<- lang_ru;;*);;
+        => nrel_using_constants: 
+               {
+               concept_vegetable
+               };;
+*);;
+
+statement ->...
+(*
+        ->rrel_key_sc_element: concept_cabbage;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В квашеном виде капуста намного полезнее, чем в свежем.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Капуста)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		concept_sauerkraut
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_cabbage;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/cabbage.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(капуста)](*<- lang_ru;;*);;
+*);;
+
+concept_cabbage<=nrel_inclusion:concept_vegetable;;
+concept_cabbage<-nrel_example:concept_sauerkraut;;
+
+

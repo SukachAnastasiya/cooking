@@ -1,0 +1,43 @@
+
+sc_node_not_relation->concept_carrot;;
+sc_node_not_relation->concept_vegetable;;
+sc_node_not_relation->concept_water;;
+
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_carrot;;
+	<= nrel_sc_text_translation: ...(*->[Морковь - овощ со съедобным сладковатым оранжевым утолщённым корнем.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Морковь)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_vegetable
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_carrot;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Корнеплод моркови почти на 90% состоит из воды.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Морковь)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_water
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_carrot;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/carrot.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Морковь)](*<- lang_ru;;*);;
+*);;
+
+concept_carrot<=nrel_inclusion:concept_vegetable;;
+
+
+
