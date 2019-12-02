@@ -9,7 +9,7 @@ sc_node_not_relation->concept_dish;;
 sc_node_norole_relation->nrel_inclusion;;
 
 //concept_beetroot=> nrel_main_idtf: [свёкла](* <- lang_ru;; *);;
-concept_beetroot=> nrel_main_idtf: [beet](* <- lang_en;; *);;
+//concept_beetroot=> nrel_main_idtf: [beet](* <- lang_en;; *);;
 
 definition ->...
 (*
@@ -44,7 +44,7 @@ illustration -> ...
        => nrel_main_idtf: [Рисунок(Свекла)](*<- lang_ru;;*);;
 *);;
 
-concept_beet<=nrel_inclusion:concept_vegetable;;
+concept_beet<-nrel_inclusion:concept_vegetable;;
 
 
 

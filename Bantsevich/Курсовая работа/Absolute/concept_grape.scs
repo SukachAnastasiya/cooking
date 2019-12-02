@@ -7,8 +7,10 @@ sc_node_not_relation->concept_fetus;;
 sc_node_norole_relation->nrel_inclusion;;
 sc_node_norole_relation->nrel_protein_content;;
 
-concept_grape=> nrel_main_idtf: [Виноград](* <- lang_ru;; *);;
-concept_grape=> nrel_main_idtf: [grape](* <- lang_en;; *);;
+concept_grape
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Виноград]
+		(* <- lang_ru;; *);;
 
 definition ->...
 (*
@@ -40,7 +42,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Виноград)](*<- lang_ru;;*);;
 *);;
 
-concept_grape<=nrel_inclusion:concept_berry;;
+concept_grape<-nrel_inclusion:concept_berry;;
 
 
 

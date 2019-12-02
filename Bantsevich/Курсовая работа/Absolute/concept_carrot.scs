@@ -6,8 +6,7 @@ sc_node_not_relation->concept_water;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
-//concept_carrot=> nrel_main_idtf: [морковь](* <- lang_ru;; *);;
-concept_carrot=> nrel_main_idtf: [carrot](* <- lang_en;; *);;
+
 
 definition ->...
 (*
@@ -38,7 +37,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Морковь)](*<- lang_ru;;*);;
 *);;
 
-concept_carrot<=nrel_inclusion:concept_vegetable;;
+concept_carrot<-nrel_inclusion:concept_vegetable;;
 
 
 

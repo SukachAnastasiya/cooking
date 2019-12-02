@@ -1,5 +1,4 @@
 
-sc_node_not_relation->concept_bean;;
 sc_node_not_relation->concept_beans;;
 sc_node_not_relation->concept_fetus;;
 sc_node_not_relation->concept_viande;;
@@ -8,8 +7,7 @@ sc_node_not_relation->concept_river_fish;;
 sc_node_norole_relation->nrel_inclusion;;
 sc_node_norole_relation->nrel_protein_content;;
 
-//concept_bean=> nrel_main_idtf: [Фасоль](* <- lang_ru;; *);;
-concept_bean=> nrel_main_idtf: [bean](* <- lang_en;; *);;
+
 
 definition ->...
 (*
@@ -43,7 +41,7 @@ illustration -> ...
        => nrel_main_idtf: [Рисунок(Фасоль)](*<- lang_ru;;*);;
 *);;
 
-concept_bean<=nrel_inclusion:concept_beans;;
+concept_bean<-nrel_inclusion:concept_beans;;
 
 
 

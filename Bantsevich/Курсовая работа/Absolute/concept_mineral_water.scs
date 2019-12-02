@@ -1,12 +1,13 @@
 
 sc_node_not_relation->concept_mineral_water;;
-sc_node_not_relation->concept_water;;
-
 sc_node_norole_relation->nrel_inclusion;;
 sc_node_role_relation->rrel_example;;
 
-concept_mineral_water=> nrel_main_idtf: [Минеральная вода](* <- lang_ru;; *);;
-concept_mineral_water=> nrel_main_idtf: [mineral water](* <- lang_en;; *);;
+
+concept_mineral_water
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Минеральная вода]
+		(* <- lang_ru;; *);;
 
 definition ->...
 (*

@@ -4,9 +4,11 @@ sc_node_not_relation->concept_bakery;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
+concept_powdered_sugar
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Сахарная пудра]
+		(* <- lang_ru;; *);;
 
-concept_powdered_sugar=> nrel_main_idtf: [Сахарная пудра](* <- lang_ru;; *);;
-concept_powdered_sugar=> nrel_main_idtf: [powdered_sugar](* <- lang_en;; *);;
 
 definition ->...
 (*

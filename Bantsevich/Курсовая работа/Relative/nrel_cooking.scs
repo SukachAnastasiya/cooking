@@ -12,8 +12,12 @@ sc_node_not_relation->concept_cold_dish;;
 
 sc_node_norole_relation ->nrel_cooking;;
 
-nrel_cooking=> nrel_main_idtf: [Приготовление*](*<- lang_ru;;*);;
-nrel_vacuum_cooking => nrel_main_idtf: [cooking](*<- lang_en;;*);;
+nrel_cooking
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [Приготовление*]
+		(* <- lang_ru;; *);;
+
+
 definition ->...
 (*
 	->rrel_key_sc_element: nrel_cooking;;

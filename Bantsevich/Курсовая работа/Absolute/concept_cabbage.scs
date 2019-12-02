@@ -8,8 +8,7 @@ sc_node_role_relation->rrel_example;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
-//concept_cabbage=> nrel_main_idtf: [капуста](* <- lang_ru;; *);;
-concept_cabbage=> nrel_main_idtf: [cabbage](* <- lang_en;; *);;
+
 
 definition ->...
 (*
@@ -40,7 +39,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(капуста)](*<- lang_ru;;*);;
 *);;
 
-concept_cabbage<=nrel_inclusion:concept_vegetable;;
-concept_cabbage=>nrel_example:concept_sauerkraut;;
+concept_cabbage<-nrel_inclusion:concept_vegetable;;
+concept_cabbage<-nrel_example:concept_sauerkraut;;
 
 

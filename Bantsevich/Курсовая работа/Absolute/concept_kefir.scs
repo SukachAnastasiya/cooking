@@ -4,9 +4,10 @@ sc_node_not_relation->concept_dairy_product;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
-
-concept_kefir=> nrel_main_idtf: [Кефир](* <- lang_ru;; *);;
-concept_kefir=> nrel_main_idtf: [kefir](* <- lang_en;; *);;
+concept_kefir
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Кефир]
+		(* <- lang_ru;; *);;
 
 definition ->...
 (*
@@ -38,7 +39,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Кефир)](*<- lang_ru;;*);;
 *);;
 
-concept_kefir<=nrel_inclusion:concept_dairy_product;;
+concept_kefir<-nrel_inclusion:concept_dairy_product;;
 
 
 

@@ -2,9 +2,11 @@ sc_node_not_relation->concept_grated_potato;;
 sc_node_not_relation->concept_viande;;
 sc_node_not_relation->concept_onion;;
 
-concept_babka => nrel_main_idtf:
-	[Бабка](* <- lang_ru;; *);
-	[babka](* <- lang_en;; *);;
+concept_babka
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Бабка]
+		(* <- lang_ru;; *);;
+
 
 definition ->...
 (*
@@ -27,5 +29,5 @@ illustration -> ...
         => nrel_main_idtf: [Рисунок(Бабка)](*<- lang_ru;;*);;
 *);;
 
-concept_babka => nrel_national_dish: concept_belarus;;
+concept_babka <- nrel_national_dish: concept_belarus;;
 concept_babka <- concept_dish;;

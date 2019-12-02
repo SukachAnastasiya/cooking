@@ -8,8 +8,11 @@ sc_node_not_relation->cake_anthill_e5;;
 sc_node_norole_relation->nrel_inclusion;;
 sc_node_role_relation->rrel_example;;
 
-concept_duff=> nrel_main_idtf: [тесто](* <- lang_ru;; *);;
-concept_duff=> nrel_main_idtf: [duff](* <- lang_en;; *);;
+
+concept_duff
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [тесто]
+		(* <- lang_ru;; *);;
 
 definition ->...
 (*

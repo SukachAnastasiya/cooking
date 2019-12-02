@@ -5,8 +5,11 @@ sc_node_not_relation->concept_dish;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
-concept_cinnamon=> nrel_main_idtf: [Корица](* <- lang_ru;; *);;
-concept_cinnamon=> nrel_main_idtf: [cinnamon](* <- lang_en;; *);;
+concept_caviar
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Корица]
+		(* <- lang_ru;; *);;
+
 
 definition ->...
 (*
@@ -38,7 +41,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Корица)](*<- lang_ru;;*);;
 *);;
 
-concept_cinnamon<=nrel_inclusion:concept_spice;;
+concept_cinnamon<-nrel_inclusion:concept_spice;;
 
 
 

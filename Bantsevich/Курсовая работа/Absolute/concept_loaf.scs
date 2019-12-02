@@ -4,9 +4,11 @@ sc_node_not_relation->concept_bakery;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
+concept_loaf
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Батон]
+		(* <- lang_ru;; *);;
 
-concept_loaf=> nrel_main_idtf: [Батон](* <- lang_ru;; *);;
-concept_loaf=> nrel_main_idtf: [loaf](* <- lang_en;; *);;
 
 definition ->...
 (*
@@ -28,7 +30,7 @@ statement ->...
 		 {
 	concept_flour
 		};;
-		*);;
+*);;
 
 illustration -> ...
 (*
@@ -37,7 +39,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Батон)](*<- lang_ru;;*);;
 *);;
 
-concept_loaf<=nrel_inclusion:concept_bakery;;
+concept_loaf<-nrel_inclusion:concept_bakery;;
 
 
 

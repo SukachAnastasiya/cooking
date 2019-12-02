@@ -6,9 +6,10 @@ sc_node_not_relation->concept_orange;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
-
-concept_mandarin=> nrel_main_idtf: [Мандарин](* <- lang_ru;; *);;
-concept_mandarin=> nrel_main_idtf: [mandarin](* <- lang_en;; *);;
+concept_mandarin
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Мандарин]
+		(* <- lang_ru;; *);;
 
 definition ->...
 (*
@@ -42,7 +43,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Мандарин)](*<- lang_ru;;*);;
 *);;
 
-concept_mandarin<=nrel_inclusion:concept_fruit;;
+concept_mandarin<-nrel_inclusion:concept_fruit;;
 
 
 

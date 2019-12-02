@@ -5,8 +5,10 @@ sc_node_not_relation->concept_berry;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
-concept_eggplant=> nrel_main_idtf: [баклажан](* <- lang_ru;; *);;
-concept_eggplant=> nrel_main_idtf: [eggplant](* <- lang_en;; *);;
+concept_eggplant
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [баклажан]
+		(* <- lang_ru;; *);;
 definition ->...
 (*
 	->rrel_key_sc_element: concept_eggplant;;
@@ -37,7 +39,7 @@ illustration -> ...
 	<= nrel_sc_text_translation: ...(*->"file://pictures/eggplant.jpg";;*);;
 	=> nrel_main_idtf: [Рисунок(баклажан)](*<- lang_ru;;*);;
 *);;
-concept_eggplant<=nrel_inclusion:concept_vegetable;;
+concept_eggplant<-nrel_inclusion:concept_vegetable;;
 
 
 

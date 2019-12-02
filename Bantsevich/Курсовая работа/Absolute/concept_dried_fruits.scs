@@ -6,8 +6,11 @@ sc_node_not_relation->concept_fruit;;
 sc_node_norole_relation->nrel_inclusion;;
 sc_node_norole_relation->nrel_protein_content;;
 
-concept_dried_fruits=> nrel_main_idtf: [Сухофрукты](* <- lang_ru;; *);;
-concept_dried_fruits=> nrel_main_idtf: [dried_fruits](* <- lang_en;; *);;
+
+concept_dried_fruits
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Сухофрукты]
+		(* <- lang_ru;; *);;
 
 definition ->...
 (*
@@ -51,7 +54,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Сухофрукты)](*<- lang_ru;;*);;
 *);;
 
-concept_dried_fruits<=nrel_inclusion:concept_berry;concept_fruit;;
+concept_dried_fruits<-nrel_inclusion:concept_berry;concept_fruit;;
 //concept_dried_fruits<=nrel_inclusion:concept_fruit;;
 
 

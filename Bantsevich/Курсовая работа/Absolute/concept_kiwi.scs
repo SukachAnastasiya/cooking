@@ -5,9 +5,11 @@ sc_node_not_relation->concept_berry;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
+concept_kiwi
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Киви]
+		(* <- lang_ru;; *);;
 
-concept_kiwi=> nrel_main_idtf: [Киви](* <- lang_ru;; *);;
-concept_kiwi=> nrel_main_idtf: [kiwi](* <- lang_en;; *);;
 
 definition ->...
 (*
@@ -38,7 +40,7 @@ illustration -> ...
 	=> nrel_main_idtf: [Рисунок(Киви)](*<- lang_ru;;*);;
 *);;
 
-concept_kiwi<=nrel_inclusion:concept_berry;;
+concept_kiwi<-nrel_inclusion:concept_berry;;
 
 
 

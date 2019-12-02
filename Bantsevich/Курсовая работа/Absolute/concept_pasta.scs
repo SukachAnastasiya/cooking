@@ -2,9 +2,6 @@ sc_node_not_relation->concept_pasta;;
 sc_node_not_relation->concept_duff;;
 sc_node_not_relation->concept_water;;
 
-//concept_babka => nrel_main_idtf:
-	//[Бабка](* <- lang_ru;; *);
-	//[babka](* <- lang_en;; *);;
 
 definition ->...
 (*

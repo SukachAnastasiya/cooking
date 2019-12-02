@@ -6,6 +6,10 @@ sc_node_not_relation->concept_citrus_fruit;;
 
 sc_node_norole_relation->nrel_inclusion;;
 
+concept_melon
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Дыня]
+		(* <- lang_ru;; *);;
 
 concept_melon=> nrel_main_idtf: [Дыня](* <- lang_ru;; *);;
 concept_melon=> nrel_main_idtf: [melon](* <- lang_en;; *);;

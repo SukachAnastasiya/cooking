@@ -13,9 +13,10 @@ sc_node_not_relation->sandwich_e3;;
 sc_node_norole_relation->nrel_inclusion;;
 sc_node_role_relation->rrel_example;;
 
-
-concept_butty=> nrel_main_idtf: [Бутерброд](* <- lang_ru;; *);;
-concept_butty=> nrel_main_idtf: [butty](* <- lang_en;; *);;
+concept_butty
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Бутерброд]
+		(* <- lang_ru;; *);;
 
 definition ->...
 (*
@@ -54,7 +55,7 @@ illustration -> ...
       => nrel_main_idtf: [Рисунок(Бутерброд)](*<- lang_ru;;*);;
 *);;
 
-concept_butty<=nrel_inclusion:concept_product;;
+concept_butty<-nrel_inclusion:concept_product;;
 concept_butty<-rrel_example:sandwich_e3;sandwich_e4;;
 
 

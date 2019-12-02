@@ -10,9 +10,12 @@ sc_node_not_relation->concept_powdered_sugar;;
 sc_node_not_relation->concept_number;;
 sc_node_not_relation->concept_soda;;
 
-nrel_infusion=> nrel_main_idtf: [настаивание*](*<- lang_ru;;*);;
 nrel_infusion
-=> nrel_main_idtf: [sifting](*<- lang_en;;*);;
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [настаивание*]
+		(* <- lang_ru;; *);;
+
+
 definition ->...
 (*
 	->rrel_key_sc_element: nrel_infusion;;

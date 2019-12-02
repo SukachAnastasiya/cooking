@@ -8,8 +8,7 @@ sc_node_not_relation->concept_product;;
 sc_node_norole_relation->nrel_inclusion;;
 
 
-//concept_caviar=> nrel_main_idtf: [икра](* <- lang_ru;; *);;
-//concept_caviar=> nrel_main_idtf: [caviar](* <- lang_en;; *);;
+
 
 definition ->...
 (*
