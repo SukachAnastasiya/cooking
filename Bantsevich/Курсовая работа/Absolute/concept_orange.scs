@@ -1,0 +1,46 @@
+
+sc_node_not_relation->concept_orange;;
+sc_node_not_relation->concept_fruit;;
+sc_node_not_relation->concept_citrus_fruit;;
+
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+concept_orange=> nrel_main_idtf: [Апельсин](* <- lang_ru;; *);;
+concept_orange=> nrel_main_idtf: [orange](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_orange;;
+	<= nrel_sc_text_translation: ...(*->[Апельсин - цитрусовый плод с мягкой кожурой оранжевого цвета.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Апельсин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_citrus_fruit;
+		concept_fetus
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_orange;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Апельсины – самые распространённые в мире цитрусы.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Апельсин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_citrus_fruit
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_orange;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/orange.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Апельсин)](*<- lang_ru;;*);;
+*);;
+
+concept_orange<=nrel_inclusion:concept_fruit;;
+
+
+

@@ -1,0 +1,46 @@
+
+sc_node_not_relation->concept_grape;;
+sc_node_not_relation->concept_berry;;
+sc_node_not_relation->concept_fetus;;
+
+
+sc_node_norole_relation->nrel_inclusion;;
+sc_node_norole_relation->nrel_protein_content;;
+
+concept_grape=> nrel_main_idtf: [Виноград](* <- lang_ru;; *);;
+concept_grape=> nrel_main_idtf: [grape](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_grape;;
+	<= nrel_sc_text_translation: ...(*->[Виноград — плоды, в зрелом виде представляющие собой сладкие ягоды. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Виноград)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_berry;
+		concept_fetus
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_grape;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Плод винограда имеет разную форму и цвет благодаря разным сортам: цвета могут быть светло-салатовыми, розовато-фиолетовыми, синими, почти черными.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Виноград)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_fetus
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_grape;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/grape.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Виноград)](*<- lang_ru;;*);;
+*);;
+
+concept_grape<=nrel_inclusion:concept_berry;;
+
+
+

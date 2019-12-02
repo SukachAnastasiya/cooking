@@ -1,0 +1,44 @@
+sc_node_not_relation->concept_cinnamon;;
+sc_node_not_relation->concept_spice;;
+sc_node_not_relation->concept_apple;;
+sc_node_not_relation->concept_dish;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+concept_cinnamon=> nrel_main_idtf: [Корица](* <- lang_ru;; *);;
+concept_cinnamon=> nrel_main_idtf: [cinnamon](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_cinnamon;;
+	<= nrel_sc_text_translation: ...(*->[Корица – это известная специя, которая активно используется в кулинарии.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Корица)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+   		 {
+		concept_spice
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cinnamon;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Особенно хорошо сочетается корица с теми блюдами, в состав которых входят яблоки.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Корица)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_apple;
+		concept_dish
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_cinnamon;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/cinnamon.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Корица)](*<- lang_ru;;*);;
+*);;
+
+concept_cinnamon<=nrel_inclusion:concept_spice;;
+
+
+

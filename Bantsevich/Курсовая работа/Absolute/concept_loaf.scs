@@ -1,0 +1,43 @@
+sc_node_not_relation->concept_loaf;;
+sc_node_not_relation->concept_flour;;
+sc_node_not_relation->concept_bakery;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+concept_loaf=> nrel_main_idtf: [Батон](* <- lang_ru;; *);;
+concept_loaf=> nrel_main_idtf: [loaf](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_loaf;;
+	<= nrel_sc_text_translation: ...(*->[Батон - хлебобулочное изделие продолговатой формы.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Батон)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_bakery
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_loaf;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Изготавливают разные виды батона из самой разной муки — пшеничной, ржаной, кукурузной, ячменной и некоторых других.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Батон)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+	concept_flour
+		};;
+		*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_loaf;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/loaf.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Батон)](*<- lang_ru;;*);;
+*);;
+
+concept_loaf<=nrel_inclusion:concept_bakery;;
+
+
+

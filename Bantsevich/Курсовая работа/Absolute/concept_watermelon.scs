@@ -1,0 +1,45 @@
+
+sc_node_not_relation->concept_watermelon;;
+sc_node_not_relation->concept_berry;;
+sc_node_not_relation->concept_vegetable;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+concept_watermelon=> nrel_main_idtf: [Арбуз](* <- lang_ru;; *);;
+concept_watermelon=> nrel_main_idtf: [watermelon](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_watermelon;;
+	<= nrel_sc_text_translation: ...(*->[Арбуз - ягода овальной формы с окраской коры от белой и жёлтой до тёмно-зелёной с рисунком в виде полосок и пятен; с красной мякотью.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Арбуз)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+			 {
+			concept_berry
+			};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_watermelon;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Арбузы являются как фруктом, так и овощем.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Арбуз)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_vegetable;
+		concept_berry
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_watermelon;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/watermelon.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Арбуз)](*<- lang_ru;;*);;
+*);;
+
+concept_watermelon<=nrel_inclusion:concept_berry;;
+concept_watermelon<=nrel_inclusion:concept_vegetable;;
+
+

@@ -1,0 +1,44 @@
+sc_node_not_relation->concept_kefir;;
+sc_node_not_relation->concept_milk;;
+sc_node_not_relation->concept_dairy_product;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+concept_kefir=> nrel_main_idtf: [Кефир](* <- lang_ru;; *);;
+concept_kefir=> nrel_main_idtf: [kefir](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_kefir;;
+	<= nrel_sc_text_translation: ...(*->[Кефир — кисломолочный напиток, получаемый из молока путём кисломолочного брожения с применением кефирных «грибков».](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Кефир)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_dairy_product;
+		concept_milk
+};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_kefir;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Кефир содержит в несколько раз больше кальция, чем молоко.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Кефир)](*<- lang_ru;;*);;
+	=> nrel_using_constants:	
+		 {
+		concept_milk
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_kefir;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/kefir.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Кефир)](*<- lang_ru;;*);;
+*);;
+
+concept_kefir<=nrel_inclusion:concept_dairy_product;;
+
+
+

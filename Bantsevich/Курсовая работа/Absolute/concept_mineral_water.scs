@@ -1,0 +1,40 @@
+
+sc_node_not_relation->concept_mineral_water;;
+sc_node_not_relation->concept_water;;
+
+sc_node_norole_relation->nrel_inclusion;;
+sc_node_role_relation->rrel_example;;
+
+concept_mineral_water=> nrel_main_idtf: [Минеральная вода](* <- lang_ru;; *);;
+concept_mineral_water=> nrel_main_idtf: [mineral water](* <- lang_en;; *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_mineral_water;;
+<= nrel_sc_text_translation: ...(*->[Минеральная вода — вода, содержащая в своём составе растворённые соли, микроэлементы, а также некоторые биологически активные компоненты. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Минеральная вода)](*<- lang_ru;;*);;
+=> nrel_using_constants: {
+concept_water
+};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mineral_water;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Минеральная питьевая вода должна быть прозрачной, бесцветной или с оттенками от желтоватого до зеленоватого цвета жидкостью, с вкусом и запахом, характерным для содержащихся в ней веществ.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Минеральная вода)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_mineral_water
+		};;
+*);;
+
+illustration -> ...
+(*
+		->rrel_key_sc_element: concept_mineral_water;;
+		<= nrel_sc_text_translation: ...(*->"file://pictures/mineral_water.jpg";;*);;
+		=> nrel_main_idtf: [Рисунок(Минеральная вода)](*<- lang_ru;;*);;
+*);;
+
+concept_mineral_water<=nrel_inclusion:concept_water;;
+

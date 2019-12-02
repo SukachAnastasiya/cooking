@@ -1,0 +1,45 @@
+sc_node_not_relation->concept_vinegar;;
+sc_node_not_relation->concept_water;;
+sc_node_not_relation->concept_spirt;;
+sc_node_not_relation->concept_product;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+concept_vinegar=> nrel_main_idtf: [Уксус](* <- lang_ru;; *);;
+concept_vinegar=> nrel_main_idtf: [vinegar](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_vinegar;;
+	<= nrel_sc_text_translation: ...(*->[Уксус — это водный раствор уксусной кислоты с характерным запахом и кислым вкусом.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Уксус)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_water
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_vinegar;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[На 95% уксус состоит из воды, а остальное составляют различные альдегиды, спирты, эфиры и другие вещества](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Уксус)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_water;
+		concept_spirt
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_vinegar;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/vinegar.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Уксус)](*<- lang_ru;;*);;
+*);;
+
+concept_vinegar<=nrel_inclusion:concept_product;;
+
+
+

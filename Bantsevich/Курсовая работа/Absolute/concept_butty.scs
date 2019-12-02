@@ -1,0 +1,60 @@
+sc_node_not_relation->concept_butty;;
+sc_node_not_relation->concept_bread;;
+sc_node_not_relation->concept_product;;
+sc_node_not_relation->concept_snack;;
+sc_node_not_relation->concept_sausage;;
+sc_node_not_relation->concept_cheese;;
+sc_node_not_relation->concept_viande;;
+sc_node_not_relation->concept_vegetable;;
+sc_node_not_relation->concept_herb;;
+sc_node_not_relation->concept_sauce;;
+sc_node_not_relation->sandwich_e4;;
+sc_node_not_relation->sandwich_e3;;
+sc_node_norole_relation->nrel_inclusion;;
+sc_node_role_relation->rrel_example;;
+
+
+concept_butty=> nrel_main_idtf: [Бутерброд](* <- lang_ru;; *);;
+concept_butty=> nrel_main_idtf: [butty](* <- lang_en;; *);;
+
+definition ->...
+(*
+        ->rrel_key_sc_element: concept_butty;;
+        <= nrel_sc_text_translation: ...(*->[Бутерброд — закуска, представляющая собой ломтик хлеба или булки, на который положены дополнительные пищевые продукты. ](*<-lang_ru;;*);;*);;
+        => nrel_main_idtf: [Определение (Бутерброд)](*<- lang_ru;;*);;
+        => nrel_using_constants:
+              {
+              concept_snack;
+              concept_bread;
+              concept_product
+              };;
+*);;
+
+statement ->...
+(*
+        ->rrel_key_sc_element: concept_butty;;
+         <= nrel_sc_text_translation: ...(*->rrel_example:[Существует огромное количество видов бутербродов — от классических с колбасой или сыром до многослойных из различных сортов мяса, овощей, зелени и соусов.](*<-lang_ru;;*);;*);;
+         => nrel_main_idtf: [Утверждение(Бутерброд)](*<- lang_ru;;*);;
+         => nrel_using_constants:
+                 {
+                 concept_butty; 
+                 concept_sausage;
+                 concept_cheese;
+                 concept_viande;
+                 concept_vegetable;
+                 concept_herb;
+                 concept_sauce
+                 };;
+*);;
+
+illustration -> ...
+(*
+      ->rrel_key_sc_element: concept_butty;;
+      <= nrel_sc_text_translation: ...(*->"file://pictures/butty.jpg";;*);;
+      => nrel_main_idtf: [Рисунок(Бутерброд)](*<- lang_ru;;*);;
+*);;
+
+concept_butty<=nrel_inclusion:concept_product;;
+concept_butty<-rrel_example:sandwich_e3;sandwich_e4;;
+
+

@@ -1,0 +1,60 @@
+sc_node_not_relation->concept_pie;;
+sc_node_not_relation->concept_bakery;;
+sc_node_not_relation->concept_potato;;
+sc_node_not_relation->concept_river_fish;;
+sc_node_not_relation->concept_filling;;
+sc_node_not_relation->concept_berry;;
+sc_node_not_relation->concept_mushroom;;
+sc_node_not_relation->concept_fruit;;
+sc_node_not_relation->concept_minced_meat;;
+
+sc_node_norole_relation->nrel_baking;;
+sc_node_norole_relation->nrel_frying;;
+sc_node_norole_relation->nrel_inclusion;;
+
+//concept_pie=> nrel_main_idtf: [Пирог](* <- lang_ru;; *);;
+concept_pie=> nrel_main_idtf: [pie](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pie;;
+	<= nrel_sc_text_translation: ...(*->[Пирог — печёное изделие из теста, обычно с начинкой, которое выпекается или жарится.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (пирог)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_bakery;
+		nrel_baking;
+		nrel_frying
+		};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pie;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Начинка для пирогов может быть как сладкой (ягоды, фрукты), так и соленой (рыба, мясной фарш,картофель, грибы и т. д.).](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(пирог)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_filling;
+		concept_pie;
+		concept_berry;
+		concept_fruit;
+		concept_minced_meat;
+		concept_fruit;
+		concept_potato;
+		concept_mushroom;
+		concept_river_fish
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_pie;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/pie.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(пирог)](*<- lang_ru;;*);;
+*);;
+
+//concept_bean<=nrel_inclusion:concept_beans;;
+
+
+

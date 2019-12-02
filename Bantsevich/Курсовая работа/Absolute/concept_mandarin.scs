@@ -1,0 +1,48 @@
+
+sc_node_not_relation->concept_mandarin;;
+sc_node_not_relation->concept_fruit;;
+sc_node_not_relation->concept_citrus_fruit;;
+sc_node_not_relation->concept_orange;;
+
+sc_node_norole_relation->nrel_inclusion;;
+
+
+concept_mandarin=> nrel_main_idtf: [Мандарин](* <- lang_ru;; *);;
+concept_mandarin=> nrel_main_idtf: [mandarin](* <- lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_mandarin;;
+	<= nrel_sc_text_translation: ...(*->[Мандарин - цитрусовый фрукт, схожий с апельсином.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Мандарин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+			 {
+			concept_orange;
+			concept_citrus_fruit;
+			concept_fruit
+			};;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mandarin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ В мандарине содержится в три раза больше витамина А, чем в апельсине.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Мандарин)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+		 {
+		concept_orange;
+		concept_fruit
+		};;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_mandarin;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/mandarin.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(Мандарин)](*<- lang_ru;;*);;
+*);;
+
+concept_mandarin<=nrel_inclusion:concept_fruit;;
+
+
+
