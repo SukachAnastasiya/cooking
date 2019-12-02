@@ -1,0 +1,45 @@
+concept_alaska_pollock<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Минтай ]
+      (*<-lang_ru;;*);
+      [ Alaska pollock ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Минтай)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_code;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Минтай - это представитель семейства тресковые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Минтай, спинной плавник, короткий усик, нижняя губа, пятнистая окраска, большой глаз )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	  concept_spawning;
+    concept_dorsal_fin;
+    concept_short_antenna;
+    concept_lower_lip;    
+    concept_spotted_coloration;
+    concept_large_eye
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Минтай имеет три спинных плавника, очень короткий усик под нижней губой, пятнистую окраску и больше глаза.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_alaska_pollock -> rrel_example: [ Минтай достигает половго созревания в возрасте трех лет.](* <- lang_ru;; *);;
+
+concept_alaska_pollock <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_alaska_pollock;;
+		<-concept_boiled_alaska_pollock;;
+		<-concept_fried_alaska_pollock;;	
+*);;

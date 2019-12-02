@@ -1,0 +1,55 @@
+concept_bream<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Лещ]
+      (*<-lang_ru;;*);
+
+      [Bream]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Лещ)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_freshwater_fish;
+	 concept_representative;
+     concept_family_cyprinidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [Лещ - это пресноводная рыба, которая является представителем семейства карповые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Лещ, группа, глубокое место, растение) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+	concept_group;
+    concept_deep_place;
+	concept_plant
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Лещ держится группами, преимущественно в глубоких местах, поросших растениях. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_bream -> rrel_example: [В период нереста лещ охотно поедает икру рыб других видов.](* <- lang_ru;; *);;
+
+concept_bream <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_bream;;
+		<-concept_boiled_bream;;
+		<-concept_fried_bream;;	
+*);;

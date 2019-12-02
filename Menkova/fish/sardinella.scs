@@ -1,0 +1,41 @@
+concept_sardinella <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Сардинелла ]
+      (*<-lang_ru;;*);
+      [ Sardinella ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Сардинелла )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_clupeidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Сардинелла - это представитель семейства сельдевые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Сардинелла, палегическая рыба, стайный образ жизни )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_palagean_fish; 
+    concept_schooling
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Сардинелла - это пелагические рыбы, ведущие стайный образ жизни. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_sardinella -> rrel_example: [ У сардинеллы имеются мясистые выросты вдоль заднего края жаберного отверстия. ](* <- lang_ru;; *);;
+ concept_sardinella <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_sardinella;;
+		<-concept_boiled_sardinella;;
+		<-concept_fried_sardinella;;	
+*);;

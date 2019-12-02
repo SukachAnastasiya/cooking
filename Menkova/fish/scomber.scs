@@ -1,0 +1,56 @@
+concept_scomber<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Скумбрия]
+      (*<-lang_ru;;*);
+
+      [Scomber]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Скумбрия)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_percidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Скумбрия - это представитель семейства окуневые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Скумбрия , взрослая особь, охота, мелкая рыба, рачок, кальмар) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+  	concept_adult_individual;
+    concept_hunting;
+	  concept_small_fish;
+    concept_crayfish;
+    concept_squid
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Взрослые особи скумбрии охотятся на мелких рыб, рачков и кальмаров. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_scomber -> rrel_example: [Скумбрия является цедильщиком планктона.](* <- lang_ru;; *);;
+
+concept_scomber <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_scomber;;
+		<-concept_boiled_scomber;;
+		<-concept_fried_scomber;;	
+*);;

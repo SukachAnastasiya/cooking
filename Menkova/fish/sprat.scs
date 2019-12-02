@@ -1,0 +1,42 @@
+concept_sprat <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Шпрот ]
+      (*<-lang_ru;;*);
+      [ Sprot ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Шпрот )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_clupeidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Шпрот - это представитель семейства сельдевые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Шпрот, килевичная чешуя, брюхо, бок )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_keeled_scales; 
+    concept_belly;
+    concept_side
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Шпрот характеризется сильно развитыми килевидными чешуйками, брюхо сжато с боков. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_sprat -> rrel_example: [ Шпрот питается ракообразными и мальками рыб. ](* <- lang_ru;; *);;
+ concept_sprat <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_sprat;;
+		<-concept_boiled_sprat;;
+		<-concept_fried_sprat;;	
+*);;

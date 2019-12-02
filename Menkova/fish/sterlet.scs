@@ -1,0 +1,42 @@
+concept_sterlet <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Стерлядь ]
+      (*<-lang_ru;;*);
+      [ Sterlet ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Стерлядь )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sturgeon;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Стерлядь - это представитель семейства осетровые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Стерлядь, личинка, моллюск, беспозвоночное )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_larva; 
+    concept_mollusk;
+    concept_invertebrate
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Взрослые особи стердяли питаются личинками, моллюсками и другими беспозвоночными. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_sterlet -> rrel_example: [ Стерлядь занесена в Красную книгу России. ](* <- lang_ru;; *);;
+ concept_sterlet <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_sterlet;;
+		<-concept_boiled_sterlet;;
+		<-concept_fried_sterlet;;	
+*);;
