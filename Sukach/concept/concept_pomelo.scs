@@ -15,43 +15,43 @@ concept_pomelo<-rrel_key_sc_element:...
 *);;
 
 concept_pomelo => nrel_kkal : 38_kkal
-(*
-=> nrel_main_idtf:
-[38 ккал]
-(*
-<- lang_ru;;
-*);;
-<- concept_kkal;;
+	(*
+		=> nrel_main_idtf:
+		[38 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
 *);;
 
 concept_pomelo => nrel_storage_time: 3_months
-(*
-=> nrel_main_idtf:
-[3 месяца]
-(*
-<- lang_ru;;
-*);;
-<- concept_time;;
+	(*
+		=> nrel_main_idtf:
+		[3 месяца]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
 *);;
 
 concept_pomelo => nrel_storage_conditions: pomelo_cond
-(*
-=> nrel_main_idtf:
-[от +2 до +20 C]
-(*
-<- lang_ru;;
+	(*
+		=> nrel_main_idtf:
+		[от +2 до +20 C]
+	(*
+	<- lang_ru;;
 *);;
 *);;
 
 concept_pomelo=> nrel_glycemic_index: 30
 
-(*
-=> nrel_main_idtf:
-[30]
-(*
-<- lang_ru;;
-*);;
-<- concept_glycemic_index;;
+	(*
+		=> nrel_main_idtf:
+		[30]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
 *);;
 
 
