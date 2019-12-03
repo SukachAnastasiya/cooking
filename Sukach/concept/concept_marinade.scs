@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_marinade;;
+
+concept_marinade => nrel_main_idtf:
+[Маринад] (* <- lang_ru;; *);
+[marinade] (* <- lang_en;; *);;
+
+concept_marinade<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Маринад)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Маринад - соус, состоящий из уксуса или прованского масла с пряностями.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_marinade => nrel_kkal : 95_kkal
+	(*
+		=> nrel_main_idtf:
+		[95 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+

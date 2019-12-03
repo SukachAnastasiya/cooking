@@ -1,0 +1,14 @@
+concept_food_wrap=>nrel_idtf:[food wrap] (* <- lang_en;; *);;
+concept_food_wrap=>nrel_main_idtf:[Пищевая пленка] (* <- lang_ru;; *);;
+
+concept_food_wrap<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Пищевая пленка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Пищевая пленка - это тонкая пластиковая пленка, обычно используемая для герметизации пищевых продуктов в контейнерах, чтобы сохранять их свежими в течение более длительного периода времени.](* <- lang_ru;; *);;
+	*);;
+
+*);;
+

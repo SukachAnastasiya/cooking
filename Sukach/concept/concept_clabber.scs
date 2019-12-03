@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_clabber;;
+
+concept_clabber => nrel_main_idtf:
+[Простокваша] (* <- lang_ru;; *);
+[clabber] (* <- lang_en;; *);;
+
+concept_clabber<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Простокваша)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Простокваша - старинный руский кисломолочный напиток, который получают в результате сквашивания обезжиренного или топленого молока.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_clabber => nrel_kkal : 58_kkal
+	(*
+		=> nrel_main_idtf:
+		[58 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_clabber => nrel_storage_time: 3_days
+	(*
+		=> nrel_main_idtf:
+		[3 дня]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_clabber => nrel_storage_conditions: clabber_cond
+	(*
+		=> nrel_main_idtf:
+		[от +2 до +6 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_clabber=> nrel_glycemic_index: 25
+
+	(*
+		=> nrel_main_idtf:
+		[25]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
+*);;
+

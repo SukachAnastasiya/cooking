@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_kumis;;
+
+concept_kumis => nrel_main_idtf:
+[Кумыс] (* <- lang_ru;; *);
+[kumis] (* <- lang_en;; *);;
+
+concept_kumis<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Кумыс)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Кумыс - кисломолочный напиток изготавливаемый в большинстве случаев из кобыльего молока, получается в результате молочнокислого и спиртового брожения при помощи болгарских и ацидофильных молочнокислых палочек и дрожжей.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_kumis => nrel_kkal : 50_kkal
+	(*
+		=> nrel_main_idtf:
+		[50 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_kumis => nrel_storage_time: 3_days
+	(*
+		=> nrel_main_idtf:
+		[3 дня]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_kumis => nrel_storage_conditions: kumis_cond
+	(*
+		=> nrel_main_idtf:
+		[от +2 до +6 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_kumis=> nrel_glycemic_index: 25
+
+	(*
+		=> nrel_main_idtf:
+		[25]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
+*);;
+

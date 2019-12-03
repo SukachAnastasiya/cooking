@@ -1,0 +1,62 @@
+concept_marmalade=>nrel_idtf:[marmalade] (* <- lang_en;; *);;
+concept_marmalade=>nrel_main_idtf:[Варенье] (* <- lang_ru;; *);;
+
+concept_marmalade<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Варенье)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Варенье - Ягоды или фрукты, сваренные в сахарном сиропе.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_fetus;concept_marmalade;;
+	*);;
+
+*);;
+
+concept_marmalade<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//marmalade.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+concept_marmalade<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_marmalade;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, варенье)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в варенье на 100 г продукта: 0.03 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_marmalade<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_marmalade;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, варенье)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в варенье на 100 г продукта: 0.2 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_marmalade<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_marmalade;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, варенье)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в варенье на 100 г продукта: 68 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_marmalade=>nrel_inclusion:concept_drupaceous_fruit;concept_citrus_fruit;concept_rosaceous_fruit;;

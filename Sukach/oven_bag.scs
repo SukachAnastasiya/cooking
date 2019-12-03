@@ -1,0 +1,20 @@
+concept_oven_bag=>nrel_idtf:[oven bag] (* <- lang_en;; *);;
+concept_oven_bag=>nrel_main_idtf:[Рукав для запекания] (* <- lang_ru;; *);;
+
+concept_oven_bag<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Рукав для запекания)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Рукав для запекания - представляет собой рулон из термостойкой плёнки, состоящей из двух слоёв, имеющий завязки из того же материала.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->concept_dish;concept_baking_dishes;;
+	*);;
+
+*);;
+
+

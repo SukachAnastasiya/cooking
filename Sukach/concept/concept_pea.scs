@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_pea;;
+
+concept_pea => nrel_main_idtf:
+[Горошек зелёный] (* <- lang_ru;; *);
+[pea] (* <- lang_en;; *);;
+
+concept_pea<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Горошек зелёный)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Горошек зелёный - род однолетних и многолетних травянистых растений семейства Бобовые.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_pea => nrel_kkal : 81_kkal
+(*
+=> nrel_main_idtf:
+[81 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+concept_pea => nrel_storage_time: 1_years
+(*
+=> nrel_main_idtf:
+[1 год]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+
+concept_pea => nrel_storage_conditions: pea_cond
+(*
+=> nrel_main_idtf:
+[от +2 до +8 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+concept_pea=> nrel_glycemic_index: 54
+
+(*
+=> nrel_main_idtf:
+[54]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

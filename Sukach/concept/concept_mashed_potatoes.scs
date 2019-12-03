@@ -1,0 +1,58 @@
+sc_node_not_relation -> concept_mashed_potatoes;;
+
+concept_mashed_potatoes => nrel_main_idtf:
+[Картофельное пюре] (* <- lang_ru;; *);
+[Mashed potatoes] (* <- lang_en;; *);;
+
+concept_mashed_potatoes<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Картофельное пюре)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Картофельное пюре - пюре из картофеля.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_mashed_potatoes => nrel_kkal : 88_kkal
+(*
+=> nrel_main_idtf:
+[88 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+concept_mashed_potatoes => nrel_storage_time: 2_days
+(*
+=> nrel_main_idtf:
+[2 дня]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+
+concept_mashed_potatoes => nrel_storage_conditions: mashed_potatoes_cond
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+concept_mashed_potatoes=> nrel_glycemic_index: 95
+
+(*
+=> nrel_main_idtf:
+[95]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+concept_mashed_potatoes=>nrel_inclusion:concept_potato;;
+

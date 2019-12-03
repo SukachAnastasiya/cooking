@@ -1,0 +1,65 @@
+
+concept_nut=>nrel_idtf:[nut] (* <- lang_en;; *);;
+concept_nut=>nrel_main_idtf:[Орех] (* <- lang_ru;; *);;
+
+concept_nut<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Орех)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Орех - плод некоторых растений,как правило, со съедобным ядром и крепкой скорлупой.](* <- lang_ru;; *);;
+	*);;
+
+	<=nrel_using_constants:...
+	(*
+		->nrel_fetus;concept_nut;;
+	*);;
+
+*);;
+
+concept_nut->rrel_example:concept_walnut;;
+
+concept_nut<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//nut.jpeg"
+			(*
+		=>nrel_format:format_jpeg;;
+		*);;
+	*);;
+*);;
+
+concept_nut<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_fats_content;concept_nut;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание жиров*, орех)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание жиров в орехах на 100 г продукта: 54 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_nut<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_protein_content;concept_nut;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание белков*, орех)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание белков в орехах на 100 г продукта: 20 г](* <- lang_ru;; *);;
+	*);;
+*);;
+concept_nut<-rrel_key_sc_element:...
+(*
+	->rrel_key_sc_element:nrel_carbohydrates_content;concept_nut;;
+	<-statement;;
+	=>nrel_main_idtf:[Утв.(содержание углеводов*, орех)](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Содержание углеводов в орехах на 100 г продукта: 21 г](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_nut=>nrel_inclusion:concept_walnut;;

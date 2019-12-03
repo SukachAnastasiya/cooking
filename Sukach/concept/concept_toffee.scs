@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_toffee;;
+
+concept_toffee => nrel_main_idtf:
+[Ирис] (* <- lang_ru;; *);
+[toffee] (* <- lang_en;; *);;
+
+concept_toffee<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Ирис)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Ирис - помадная масса, получаемая увариванием сгущённого молока с сахаром.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_toffee => nrel_kkal : 391_kkal
+	(*
+		=> nrel_main_idtf:
+		[391 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_toffee => nrel_storage_time: 3_years
+	(*
+		=> nrel_main_idtf:
+		[3 года]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_toffee => nrel_storage_conditions: toffee_cond
+	(*
+		=> nrel_main_idtf:
+		[от +2 до +6 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_toffee=> nrel_glycemic_index: 60
+
+	(*
+		=> nrel_main_idtf:
+		[60]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
+*);;
+

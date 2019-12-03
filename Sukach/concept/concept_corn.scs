@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_corn;;
+
+concept_corn => nrel_main_idtf:
+[Кукуруза] (* <- lang_ru;; *);
+[corn] (* <- lang_en;; *);;
+
+concept_corn<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Кукуруза)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Кукуруза - однолетнее растение семейства злаки, культурный представитель рода кукуруза.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_corn => nrel_kkal : 96_kkal
+	(*
+		=> nrel_main_idtf:
+		[96 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_corn => nrel_storage_time: 10_days
+	(*
+		=> nrel_main_idtf:
+		[10 дня]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_corn => nrel_storage_conditions: corn_cond
+	(*
+		=> nrel_main_idtf:
+		[от +2 до +6 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_corn=> nrel_glycemic_index: 85
+	(*
+		=> nrel_main_idtf:
+		[85]
+	(*
+		<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+

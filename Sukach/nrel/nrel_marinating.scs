@@ -1,0 +1,51 @@
+marinating=>nrel_idtf:[marinating*] (* <- lang_en;; *);;
+marinating=>nrel_main_idtf:[Маринование*] (* <- lang_ru;; *);;
+
+marinating<-rrel_key_sc_element:...
+(*
+	<-definition;;=>nrel_main_idtf:[Опр.(Маринование*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+		(*
+		->[Маринование - способ консервирования пищевых продуктов, основанный на действии кислоты, которая в определённых концентрациях подавляет жизнедеятельность многих микроорганизмов.](* <- lang_ru;; *);;
+		*);;
+	<=nrel_using_constants:...
+		(*
+		->concept_end_res;;
+		->concept_start_res;;
+		*);;
+*);;
+
+marinating=>nrel_first_domain:concept_end_res;;
+marinating=>nrel_second_domain:concept_start_res;;
+concept_end_res<-...
+(*
+	->concept_start_res;;
+	=>nrel_combination:...
+	(*
+		<=nrel_definitional_domain:marinating;;
+	*);;
+*);;
+
+marinating<-marinating_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+marinating<-oriented_relation;;
+antisymmetric_relation->marinating;;
+antitransitive_relation->marinating;;
+antireflexive_relation->marinating;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+concept_end_res
+=> nrel_main_idtf: [Пищевой продукт]
+(* <- lang_ru;; *);;
+
+concept_start_res
+=> nrel_main_idtf: [Маринованный пищевой продукт]
+(* <- lang_ru;; *);;
+	

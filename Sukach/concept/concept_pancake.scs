@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_pancake;;
+
+concept_pancake => nrel_main_idtf:
+[Блины] (* <- lang_ru;; *);
+[pancake] (* <- lang_en;; *);;
+
+concept_pancake<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Блины)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+        ->[Блины - плоские и круглые мучные изделия, приготавливаемые из жидкого теста методом жарки на сковороде.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_pancake => nrel_kkal : 227_kkal
+(*
+	=> nrel_main_idtf:
+	[227 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_pancake => nrel_storage_time: 2_days
+(*
+	=> nrel_main_idtf:
+	[2 дня]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_pancake => nrel_storage_conditions: pancake_cond
+(*
+	=> nrel_main_idtf:
+	[от +2 до +8 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_pancake=> nrel_glycemic_index: 66
+
+(*
+	=> nrel_main_idtf:
+	[66]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
+*);;
+
+

@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_liver;;
+
+concept_liver => nrel_main_idtf:
+[Печень] (* <- lang_ru;; *);
+[liver] (* <- lang_en;; *);;
+
+concept_liver<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Печень)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Печень - самая крупная пищеварительная железа у животных.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_liver => nrel_kkal : 130_kkal
+	(*
+		=> nrel_main_idtf:
+		[130 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_liver => nrel_storage_time: 2_days
+	(*
+		=> nrel_main_idtf:
+		[2 дня]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_liver => nrel_storage_conditions: liver_cond
+	(*
+		=> nrel_main_idtf:
+		[от +2 до +6 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_liver=> nrel_glycemic_index: 0
+
+	(*
+		=> nrel_main_idtf:
+		[0]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
+*);;
+
+concept_subproducts=>nrel_inclusion:concept_liver;;

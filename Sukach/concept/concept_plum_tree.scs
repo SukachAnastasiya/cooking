@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_plum_tree;;
+
+concept_plum_tree => nrel_main_idtf:
+[Слива] (* <- lang_ru;; *);
+[plum_tree] (* <- lang_en;; *);;
+
+concept_plum_tree<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Слива)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Слива - плодовое растение, семейства Розовые.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_plum_tree => nrel_kkal : 46_kkal
+(*
+=> nrel_main_idtf:
+[46 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+concept_plum_tree => nrel_storage_time: 2_months
+(*
+=> nrel_main_idtf:
+[2 месяца]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+
+concept_plum_tree => nrel_storage_conditions: plum_tree_cond
+(*
+=> nrel_main_idtf:
+[от +0 до +6 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+concept_plum_tree=> nrel_glycemic_index: 22
+
+(*
+=> nrel_main_idtf:
+[22]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+

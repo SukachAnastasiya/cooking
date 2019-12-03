@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_gelatin;;
+
+concept_gelatin => nrel_main_idtf:
+[Желе] (* <- lang_ru;; *);
+[gelatin] (* <- lang_en;; *);;
+
+concept_gelatin<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Желе)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Желе - пищевой коллоидный раствор, в который добавляют желатин.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_gelatin => nrel_kkal : 62_kkal
+	(*
+		=> nrel_main_idtf:
+		[62 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_gelatin => nrel_storage_time: 4_days
+	(*
+		=> nrel_main_idtf:
+		[4 дня]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_gelatin => nrel_storage_conditions: gelatin_cond
+	(*
+		=> nrel_main_idtf:
+		[от +4 до +8 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_gelatin=> nrel_glycemic_index: 70
+
+	(*
+		=> nrel_main_idtf:
+		[70]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
+*);;
+
+

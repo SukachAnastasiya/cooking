@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_liver_pate;;
+
+concept_liver_pate => nrel_main_idtf:
+[Печёночный паштет] (* <- lang_ru;; *);
+[liver_pate] (* <- lang_en;; *);;
+
+concept_liver_pate<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Печёночный паштет)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Печёночный паштет - .](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_liver_pate => nrel_kkal : 300_kkal
+	(*
+		=> nrel_main_idtf:
+		[300 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_liver_pate => nrel_storage_time: 5_days
+	(*
+		=> nrel_main_idtf:
+		[5 дня]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_liver_pate => nrel_storage_conditions: liver_pate_cond
+	(*
+		=> nrel_main_idtf:
+		[от +2 до +6 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_liver_pate=> nrel_glycemic_index: 25
+
+	(*
+		=> nrel_main_idtf:
+		[25]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
+*);;
+
+concept_liver_pate=>nrel_inclusion:concept_liver;;

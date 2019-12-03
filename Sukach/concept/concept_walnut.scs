@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_walnut;;
+
+concept_walnut => nrel_main_idtf:
+[Грецкий орех] (* <- lang_ru;; *);
+[walnut] (* <- lang_en;; *);;
+
+concept_walnut<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Грецкий орех)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Грецкий орех - орех любого дерева juglans семества Ореховые.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_walnut => nrel_kkal : 654_kkal
+	(*
+		=> nrel_main_idtf:
+		[654 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+
+concept_walnut => nrel_storage_time: 2_weeks
+	(*
+		=> nrel_main_idtf:
+		[2 недели]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_time;;
+*);;
+
+concept_walnut => nrel_storage_conditions: walnut_cond
+	(*
+		=> nrel_main_idtf:
+		[от +15 до +25 C]
+	(*
+		<- lang_ru;;
+	*);;
+*);;
+
+concept_walnut=> nrel_glycemic_index: 20
+
+	(*
+		=> nrel_main_idtf:
+		[20]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_glycemic_index;;
+*);;
+
+concept_nut=>nrel_inclusion:concept_walnut;;

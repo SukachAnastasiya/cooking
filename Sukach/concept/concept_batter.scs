@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_batter;;
+
+concept_batter => nrel_main_idtf:
+[Кляр] (* <- lang_ru;; *);
+[batter] (* <- lang_en;; *);;
+
+concept_batter<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Кляр)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+	        ->[Кляр - жидкое тесто, в которое обмакивают продукты перед их обжариванием.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_batter => nrel_kkal : 274_kkal
+	(*
+		=> nrel_main_idtf:
+		[274 ккал]
+	(*
+		<- lang_ru;;
+	*);;
+	<- concept_kkal;;
+*);;
+

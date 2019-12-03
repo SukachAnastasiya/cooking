@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_whisky;;
+
+concept_whisky => nrel_main_idtf:
+[Виски] (* <- lang_ru;; *);
+[whisky] (* <- lang_en;; *);;
+
+concept_whisky<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:[Опр.(Виски)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+	(*
+        ->[Виски - крепкий ароматный алкогольный напиток, получаемый из различных видов зерна с использованием процессов соложения, брожения, перегонки и длительного выдерживания в дубовых бочках.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_whisky => nrel_kkal : 220_kkal
+(*
+=> nrel_main_idtf:
+[220 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+concept_whisky => nrel_storage_time: 3_years
+(*
+=> nrel_main_idtf:
+[3 года]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+
+concept_whisky => nrel_storage_conditions: whisky_cond
+(*
+=> nrel_main_idtf:
+[от +4 до +20 C]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+concept_whisky=> nrel_glycemic_index: 15
+
+(*
+=> nrel_main_idtf:
+[15]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+
